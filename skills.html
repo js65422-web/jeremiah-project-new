@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+
+<header>
+    <h1>Technical Skills</h1>
+<nav>
+  <ul class="vertical-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="scroll-box">
+  <p>
+I know how to work with HTML, CSS, and a bit of JavaScript. I like making websites that look nice, are easy to use, and work well on phones and computers. I’ve experimented with small games, interactive pages, and personal projects to practice coding and design. Besides coding, I can work with colors, layouts, and styles to make pages look clean and organized. I like learning new tools and techniques, fixing problems when something breaks, and trying out new ideas. The more I experiment, the more I understand how everything works together. I’m always looking for ways to improve my skills and make my projects better and more interesting  </p>
+</div>
+</header>
+
+<main>
+    <h2>My Skills Table</h2>
+<table id="jsTable" class="styled-table"></table>
+    <h2>Computer Skills</h2>
+    <ul>
+        <li>Basic computer literacy and instruction</li>
+        <li>Digital understanding, workflow optimization, and IT problem-solving</li>
+        <li>Programming: HTML, Python, C++ basics</li>
+        <li>Networking fundamentals</li> 
+        <li>Cybersecurity awareness</li>
+        <li>Historical knowledge applied to technology evolution</li>
+        <img src="images/technology1.jpg" alt="Computer Technology" class="skills-img">
+    </ul>
+
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Teamwork and communication</li>
+        <li>Adaptability and learning new technologies quickly</li>
+        <li>Critical thinking and logical reasoning</li>
+        <li>Research skills, including historical and technical analysis</li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2026 Jeremiah Scoggins</p>
+</footer>
+<script>
+function loadTable() {
+  const data = [
+    ["Skill", "Level"],
+    ["HTML", "Intermediate"],
+    ["CSS", "Intermediate"],
+    ["JavaScript", "Beginner"],
+    ["Python", "Beginner"]
+  ];
+
+  let table = document.getElementById("jsTable");
+
+  for (let i = 0; i < data.length; i++) {
+    let row = table.insertRow();
+
+    for (let j = 0; j < data[i].length; j++) {
+      let cell = row.insertCell();
+      cell.innerHTML = data[i][j];
+    }
+  }
+}
+
+window.onload = loadTable;
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Skills page loaded");
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+
+<nav>
+  <ul class="vertical-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="scroll-box">
+  <p>
+If you want to get in touch, feel free to send me a message or email. I’m happy to talk about projects, ideas, or just share tips and advice about coding and technology. You can also reach out if you want to collaborate on something fun or interesting. I try to reply as soon as I can, and I like connecting with people who are curious and creative. Talking to others helps me learn new things, find new project ideas, and improve my skills. Don’t hesitate to say hi—I’m always happy to meet new people and share what I know or learn from others  </p>
+</div>
+
+</header>
+
+<main>
+
+<h2>Get in Touch</h2>
+
+<p>You can contact me using the information below:</p>
+
+<ul>
+    <li>Phone: 678-588-7129</li>
+    <li>Email: <a href="mailto:js654227@georgiasouthern.edu">js654227@georgiasouthern.edu</a></li>
+    <li>Location: Georgia, USA</li>
+</ul>
+
+<h2>Contact Me</h2>
+
+<form class="contact-form" onsubmit="showMessage(event)">
+  <label for="name">Name:</label>
+  <input type="text" id="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone">
+
+  <label for="message">Message:</label>
+  <textarea id="message"></textarea>
+
+  <label for="topic">Topic:</label>
+  <select id="topic">
+    <option>General</option>
+    <option>Project</option>
+    <option>Help</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Jeremiah Scoggins</p>
+</footer>
+
+<!-- ✅ JavaScript goes HERE -->
+<script>
+function showMessage(event) {
+  event.preventDefault();
+  alert("Form submitted successfully!");
+}
+</script>
+
+</body>
+</html>

@@ -181,9 +181,9 @@ main {
 
 .scroll-box {
   position: absolute;
-  left: 250px;
+  left: 150px;
   top: 200px;
-  width: 150px;
+  width: 100px;
   height: 150px;
   border: 2px solid white;
   padding: 10px;

@@ -164,7 +164,7 @@ main {
 .vertical-nav {
   list-style-type: none;
   padding: 0;
-  width: 150px;
+  width: 200px;
 }
 
 .vertical-nav li a {
@@ -181,9 +181,9 @@ main {
 
 .scroll-box {
   position: absolute;
-  left: 400px;
+  left: 250px;
   top: 200px;
-  width: 100px;
+  width: 300px;
   height: 150px;
   border: 2px solid white;
   padding: 10px;
@@ -192,7 +192,7 @@ main {
 }
 
 .scroll-box {
-  width: 70%;          
+  width: 90%;          
   max-height: 200px;  
   margin: 20px auto;  
   padding: 15px;  
@@ -281,7 +281,7 @@ h4, h5, h6 {
   }
 
   .vertical-nav {
-    width: 70%;
+    width: 100%;
   }
 
   .section {
